@@ -40,15 +40,18 @@ h2{
   border-radius:1000px;
   text-align:center;
   padding:20%;
+  text-align:center;
 }
 .front-main{
   text-align:center;
   position:relative;
 }
-#title-header-page{
+.title-header-page{
   font-size:100px;
 }
-
+.holder{
+  text-align:left;
+}
 
 
 
@@ -73,9 +76,24 @@ h2{
   height:100%;
   padding:5%;
 }
+.art-picture:hover{
+  animation-name: zoom;
+  animation-duration: 100s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
-
-
+@keyframes zoom {
+  0% {
+    transform: scale(1, 1);
+  }
+  2% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1.5, 1.5);
+  }
+}
 
 
 
