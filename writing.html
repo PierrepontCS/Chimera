@@ -11,15 +11,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/chimera.css">
     <title></title>
   </head>
 
-  <body>
+  <body onpageshow="typeWriter()">
 
     <div class="container-fluid title">
       <div class="row">
-        <h2>Writing</h2>
+        <h2  id ="title"></h2>
       </div>
     </div>
 
@@ -80,6 +80,18 @@
       </div>
 
     </div>
+      <script>
+        var i = 0;
+        var txt = 'Writing';
+        var speed = 130;
 
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("title").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+    </script>
   </body>
 </html>
