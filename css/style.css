@@ -58,7 +58,9 @@ h2{
 
 
 
-
+p{
+  font-family: 'Nunito Sans', sans-serif;
+}
 .title{
   background-color: #AAB7BF;
   padding-left:2%;
