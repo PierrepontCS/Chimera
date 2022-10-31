@@ -54,7 +54,10 @@ h2{
 
 
 
-
+.paragraph{
+  font-family: 'Nunito Sans', sans-serif;
+  text-indent:70px;
+}
 p{
   font-family: 'Nunito Sans', sans-serif;
 }
